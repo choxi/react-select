@@ -29,6 +29,25 @@ const stringOrNode = PropTypes.oneOfType([
 
 let instanceId = 1;
 
+/**
+ *  @name Select
+ *  @example
+ *  var options = [
+ *    { value: 'one', label: 'One' },
+ *    { value: 'two', label: 'Two' }
+ *  ];
+ *  
+ *  function logChange(val) {
+ *    console.log("Selected: " + JSON.stringify(val));
+ *  }
+ *  
+ *  <Select
+ *    name="form-field-name"
+ *    value="one"
+ *    options={ options }
+ *    onChange={ logChange }
+ *  />
+ */
 class Select extends React.Component {
 	constructor (props) {
 		super(props);
